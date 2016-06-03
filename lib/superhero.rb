@@ -41,8 +41,7 @@ class Villain
 end
 
 class Power
-  attr_reader :description, :rating
-  protected :rating
+  attr_reader :description
 
   def initialize(description, rating)
     @description = description
@@ -52,6 +51,10 @@ class Power
   def >(other)
     rating > other.rating
   end
+
+  protected
+
+  attr_reader :rating
 end
 
 class Fight
@@ -90,6 +93,6 @@ batman = Superhero.new("Batman", wealth_and_sadness)
 lex = Villain.new("Lex Luthor", wealth_and_sadness)
 # lex.use_power # => "Lex is now wealthy and sad :(, villainously!"
 
-p flash > lex # => true
+# p flash > lex # => true
 
 Fight.new(flash, lex).run # => "The Flash is now running real fast! Lex is now wealthy and sad :(, villainously! The Flash is victorious!"
