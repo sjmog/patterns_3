@@ -21,7 +21,7 @@ A workshop that introduces composition, inheritance, and the benefits of one ove
 |-----------|------|
 | Superman  | Flight |
 
-- Pick a couple. Build a basic `Superhero` class that implements the following:
+- Pick a couple. Build a basic `Superhero` class that implements the following (up to the current state of `/lib/superhero.rb` on the master branch:
 
 ```ruby
 superman = Superhero.new("Superman", "flying")
@@ -33,7 +33,7 @@ superman.use_power # => "Superman is now flying!"
 
 ### Plenary (30 minutes)
 
-- Share a few students' code, critique it, and then share the example code from this repository (encouraging critique).
+- Share a few students' code, critique it, and then share the example code from this repository's `plenary` branch (encouraging critique).
 - Common issues: 'over-modularising', mixing in state rather than behaviour, using metaprogramming, not using `super`
 - Discussion topics: clean design, modules vs. classes for refactoring, `super` and the inheritance chain.
  
