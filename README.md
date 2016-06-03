@@ -21,7 +21,7 @@ A workshop that introduces composition, inheritance, and the benefits of one ove
 |-----------|------|
 | Superman  | Flight |
 
-- Pick a couple. Build a basic `Superhero` class that implements the following (up to the current state of `/lib/superhero.rb` on the master branch:
+- Pick a couple. Build a basic `Superhero` class that implements the following (up to the current state of `/lib/superhero.rb` on the master branch, which you can use for reference):
 
 ```ruby
 superman = Superhero.new("Superman", "flying")
